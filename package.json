@@ -1,0 +1,27 @@
+{
+  "name": "bait-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A chaotic Discord entertainment bot with hybrid AI and template-based comedy.",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "deploy:commands": "tsx scripts/deploy-commands.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "discord.js": "^14.22.1",
+    "dotenv": "^16.6.1",
+    "openai": "^5.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.6",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  }
+}
