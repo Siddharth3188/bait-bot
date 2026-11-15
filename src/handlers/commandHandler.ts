@@ -3,8 +3,9 @@ import type { BotCommand } from '../types/command.js';
 import { roastCommand } from '../commands/roast.js';
 import { duoCommand } from '../commands/duo.js';
 import { groupCommand } from '../commands/group.js';
+import { recordCommand } from '../commands/record.js';
 
-const commands = [roastCommand, duoCommand, groupCommand];
+const commands = [roastCommand, duoCommand, groupCommand, recordCommand];
 const commandMap = new Map(commands.map((command) => [command.data.name, command]));
 
 export function getCommands(): BotCommand[] {
