@@ -1,9 +1,9 @@
 {
   "name": "bait-bot",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "A chaotic Discord entertainment bot with hybrid AI and template-based comedy.",
+  "description": "A chaotic Discord entertainment bot with hybrid AI comedy and consent-based voice recording.",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc -p tsconfig.json",
@@ -12,9 +12,11 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@discordjs/voice": "^0.19.0",
     "discord.js": "^14.22.1",
     "dotenv": "^16.6.1",
-    "openai": "^5.20.0"
+    "openai": "^5.20.0",
+    "prism-media": "^1.3.5"
   },
   "devDependencies": {
     "@types/node": "^22.18.6",
